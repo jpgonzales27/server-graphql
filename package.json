@@ -1,0 +1,28 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "start1": "node ./dist/src/index.js yoga",
+    "start:apollo": "npm run build && node ./dist/src/index.js apollo",
+    "start:yoga": "npm run build && node ./dist/src/index.js yoga"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.5",
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "uuid": "^10.0.0"
+  }
+}
